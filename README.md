@@ -25,3 +25,6 @@ showcase updates
 
      ![Pointcloud](realsense_pointcloud.gif)
      ![Pointcloud](realsense_pointcloud_image.png)
+     
+
+* ![Pointcloud](raw.png) ![Pointcloud](man_cleaned.png) ![Pointcloud](downsampled.png)
