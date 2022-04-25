@@ -4,6 +4,7 @@ showcase updates
 ## Inhalt
 * [MobileNetSSD](#trainierte-MobileNetSSD-+-Realsense-D400)
 * [PoitNet Preparation](#Camera-depth-colormap-+-pointcloud-of-the-depth-colormap)
+* [PoitNet Classification](#PointNet-Classification)
 
 
 
@@ -22,9 +23,10 @@ showcase updates
 
 
 * PointCloud, die den depth_colormap entspricht
-
-     ![Pointcloud](realsense_pointcloud.gif)
-     ![Pointcloud](realsense_pointcloud_image.png)
      
 
 * ![Pointcloud](raw.png) ![Pointcloud](man_cleaned.png) ![Pointcloud](downsampled.png)
+
+## PointNet Classification
+
+![rs_pntoclass](rs_pntoclass.jpg)
