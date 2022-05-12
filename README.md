@@ -27,7 +27,7 @@ showcase updates
 
    ![rs_pntoclass](rs_pntoclass.jpg)
 
-## VoteNet Inference (SUN RGB-D + eigine PointCloud)
+## VoteNet Inference (SUN RGBD + eigine PointCloud)
 * SUN RGB-D PC
 
 
