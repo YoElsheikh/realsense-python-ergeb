@@ -5,7 +5,7 @@ showcase updates
 * [MobileNetSSD](#trainierte-MobileNetSSD-+-Realsense-D400)
 * [PoitNet Preparation](#Camera-depth-colormap-+-pointcloud-of-the-depth-colormap)
 * [PoitNet Classification](#PointNet-Classification)
-* [PoitNet Classification](#VoteNet-Inference-(SUN-RGB-D-+-eigine-PointCloud)
+* [VoteNet Inference (SUN RGBD + eigine PointCloud)](#VoteNet-Inference-(SUN-RGBD-+-eigine-PointCloud))
 
 
 
