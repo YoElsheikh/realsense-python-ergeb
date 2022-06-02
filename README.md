@@ -31,7 +31,7 @@ showcase updates
 * SUN RGB-D PC
 
 
-   ![votenet_sunrgbd](votenet_sunrgbd.jpg)
+   ![votenet_sunrgbd](votenet_sunrgbd.png)
    
 * eigine PC
 
