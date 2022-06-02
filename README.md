@@ -6,6 +6,7 @@ showcase updates
 * [PoitNet Preparation](#Camera-depth-colormap-+-pointcloud-of-the-depth-colormap)
 * [PoitNet Classification](#PointNet-Classification)
 * [VoteNet Inference (SUN RGBD + eigine PointCloud)](#VoteNet-Inference-(SUN-RGBD-+-eigine-PointCloud))
+* [Update 02.06.2022](#Update-02.06.2022)
 
 
 
@@ -49,4 +50,5 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 * Ein Trainings Forward Pass würde erfolgreich durchgeführt 
 * Ein Evaluierungs Forward Pass würde auch erfolgreich durchgeführt 
 * Trainierung und Evaluierung würden in der Cloud dürchgeführt und dort auch würde die Environment und Laufzeittyp dafür bestätigt 
+* ![training_eval](training_eval.png)
    
