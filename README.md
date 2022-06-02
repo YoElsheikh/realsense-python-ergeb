@@ -45,10 +45,10 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 ## Update 02.06.2022
 * Das Netzwerk ist jetzt für den Dummy Datensatz angepasst. Das heißt, dass man einen Datensatz mit der Interl Realsense RGBD Kamera PointClouds als daten erzeugen kann und die Annotation Tool "3d-on-3d.annotate" dafür, um die Labels zu generieren, zu nutzen, -> damit die dazugehörigen Bounding Boxes (Ground Truth).
 * Der genutzte Datensatz besteht aus:
-     * 15 PointClouds, i.e. 15 Szenen, von 0-7: Testing und von 7-15: Training
+     * 15 PointClouds, i.e. 15 Szenen, indiziert von 0-7: Testing und von 7-15: Training
      * 3 Klassen: Desk, Chair und Background 
-* Ein Trainings Forward Pass würde erfolgreich durchgeführt 
-* Ein Evaluierungs Forward Pass würde auch erfolgreich durchgeführt 
+* Ein Trainings Forward Pass wurde erfolgreich durchgeführt 
+* Ein Evaluierungs Forward Pass wurde auch erfolgreich durchgeführt 
 * Trainierung und Evaluierung würden in der Cloud dürchgeführt und dort auch würde die Environment und Laufzeittyp dafür bestätigt 
 * ![training_eval](training_eval.png)
    
