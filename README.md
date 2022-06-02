@@ -6,7 +6,7 @@ showcase updates
 * [PoitNet Preparation](#Camera-depth-colormap-+-pointcloud-of-the-depth-colormap)
 * [PoitNet Classification](#PointNet-Classification)
 * [VoteNet Inference (SUN RGBD + eigine PointCloud)](#VoteNet-Inference-(SUN-RGBD-+-eigine-PointCloud))
-* [Update 02.06.2022](#Update-02.06.2022)
+* [Update 02.06.2022](#Update 02.06.2022)
 
 
 
