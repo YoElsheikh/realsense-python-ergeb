@@ -59,5 +59,5 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 * Das VoteNet Code wurde dafür angepasst bzw. ein Forward Pass bestätigt (anders als 3d-on-3d.annotate, LabelCloud bearbeitet die Daten im Kamera Koordinatenframe bzw. keine weitere geometrische bearbeitung is notwendig) 
 * soweit: ca. 90 PCs wurden gemacht und 70 davon glabelt
 * Trainierung mit total 150-180 PCs vorgesehen. 
-* ![klts21_bs](klts21_bs.png) 
+* ![klt21_bs](klt21_bs.png) 
    
