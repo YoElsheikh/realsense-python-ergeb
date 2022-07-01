@@ -7,6 +7,7 @@ showcase updates
 * [PoitNet Classification](#PointNet-Classification)
 * [VoteNet Inference (SUN RGBD + eigine PointCloud)](#VoteNet-Inference-(SUN-RGBD-+-eigine-PointCloud))
 * [Update 02.06.2022](#Update-02.06.2022)
+* [Labeling-Datenaufbereitung](#Labeling-Datenaufbereitung)
 
 
 
@@ -52,4 +53,11 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 * Ein Evaluierungs Forward Pass wurde auch erfolgreich durchgeführt 
 * Trainierung und Evaluierung wurden in der Cloud durchgeführt und dort wurde auch die Environment und Laufzeittyp dafür bestätigt 
 * ![training_eval](training_eval.png)
+
+## Labeling-Datenaufbereitung
+* Statt transformieren von "3d-on-3d.annotate" annotierte Daten, ein neues Labeling Tool wurde benutzt (LabelCloud)
+* Das VoteNet Code wurde dafür angepasst bzw. ein Forward Pass bestätigt (anders als 3d-on-3d.annotate, LabelCloud bearbeitet die Daten im Kamera Koordinatenframe bzw. keine weitere geometrische bearbeitung is notwendig) 
+* soweit: ca. 90 PCs wurden gemacht und 70 davon glabelt
+* Trainierung mit total 150-180 PCs vorgesehen. 
+* ![klts21_bs](klts21_bs.png) 
    
