@@ -61,3 +61,5 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 * Trainierung mit total 150-180 PCs vorgesehen. 
 * ![klt21_bs](klt21_bs.png) 
    
+* ![klt21_bs](klt21_bs.png)
+
