@@ -50,6 +50,6 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
      * 3 Klassen: Desk, Chair und Background 
 * Ein Trainings Forward Pass wurde erfolgreich durchgeführt 
 * Ein Evaluierungs Forward Pass wurde auch erfolgreich durchgeführt 
-* Trainierung und Evaluierung wurden in der Cloud dürchgeführt und dort wurde auch die Environment und Laufzeittyp dafür bestätigt 
+* Trainierung und Evaluierung wurden in der Cloud durchgeführt und dort wurde auch die Environment und Laufzeittyp dafür bestätigt 
 * ![training_eval](training_eval.png)
    
