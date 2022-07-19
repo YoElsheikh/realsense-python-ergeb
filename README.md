@@ -12,6 +12,7 @@ showcase updates
 
 
 ## trainierte MobileNetSSD + Realsense D400
+
 * Ergebnisse von der trainierte MobileNetSSD mit der Tiefe separat gerechnet von den Kamera
 * Tiefdaten und Klassifizierung sind in einem OpenCV Label combiniert
 
@@ -20,6 +21,7 @@ showcase updates
 
 
 ## Camera depth colormap + pointcloud der depth colormap
+
 * Kamera Tiefenkarte
 
      ![Depth_colormap](depth_colormap.PNG)
@@ -30,6 +32,7 @@ showcase updates
    ![rs_pntoclass](rs_pntoclass.jpg)
 
 ## VoteNet Inference (SUN RGBD + eigine PointCloud)
+
 * SUN RGB-D PC
 
 
@@ -62,6 +65,7 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 * ![klt21_bs](klt21_bs.PNG) 
    
 ## Update 19.07.2022
+
 ### Local
 * Keine CUDA layer Kompilierung war möglich, zwar mit der "cl" Visual Studio Std. Windows Compiler, versions VS 17, 19 waren erfolglos 
 * Empfohlen war, dies mit der g++ Linux Compiler zu kompilieren, war durch WSL2 Linux kernel möglich
