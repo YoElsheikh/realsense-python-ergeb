@@ -94,7 +94,10 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
                + if the upcomming command throws a permission denied run: sudo chmod 666 /var/run/docker.sock, then run it 
                + docker run --gpus all --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
                + ---> running this doesn't seem to work: docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
-               + both of the above commands give similar outputs, particularly, GPU information
+               + both of the above commands give similar outputs, particularly, GPU info, they start a sample image with gpus enabled which can then be                        containarized
+               + to initialize a container with cuda 10.1 and an ubuntu18.04 container: 
+                    + docker run -it --gpus all nvidia/cuda:10.1-base-ubuntu18.04 nvidia-smi
+                    + to run the container (already pulled with a bash cmd): docker run -i -t 0b82600f7a6b /bin/bash
                
 ### Cloud
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
