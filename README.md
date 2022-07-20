@@ -72,43 +72,46 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 * Kompilierung von Pointnet2 war erfolgreich
 * Nachdem alle Environment Variablen bestimmt waren, gab es ein Segmentation Error, der möglicherweise etwas mit der Speicherplatzverteilung zu tun hat
 
-          Docker: 
-          + follow https://anchormen.nl/blog/data-science-ai/guide-wsl2-configuration-gpu-support/
-          + i.e. enable virtualization, restart, set WSL2 as the main version, install Ubuntu 18.04 Bionic
-          + for Docker:
-               + curl https://get.docker.com | sh 
-               + run at once: 
-                    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+  Docker: 
+  	+ follow https://anchormen.nl/blog/data-science-ai/guide-wsl2-configuration-gpu-support/
+  	+ i.e. enable virtualization, restart, set WSL2 as the main version, install Ubuntu 18.04 Bionic
+  	+ for Docker:
+       		+ curl https://get.docker.com | sh 
+       		+ run at once: 
+		    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 
-                    curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+		    curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 
-                    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+		    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 
-                    curl -s -L https://nvidia.github.io/libnvidia-container/experimental/$distribution/libnvidia-container-experimental.list | sudo tee /etc/apt                    /sources.list.d/libnvidia-container-experimental.list
-                    
-               + install nvidia toolkit sample: 
-                    sudo apt update && sudo apt install -y nvidia-docker2
-                    sudo usermod -a -G docker $USER
-               + to start docker (no systemd in win, docker will need to be started manually via): sudo service docker start 
-               + ensure docker is runnung: sudo service docker status 
-               + if the upcomming command throws a permission denied run: sudo chmod 666 /var/run/docker.sock, then run it 
-               + docker run --gpus all --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
-               + ---> running this doesn't seem to work: docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
-               + both of the above commands give similar outputs, particularly, GPU info, they start a sample image with gpus enabled which can then be                        containarized
-               + to initialize a container with cuda 10.1 and an ubuntu18.04 container: 
-                    + docker run -it --gpus all nvidia/cuda:10.1-base-ubuntu18.04 nvidia-smi
-                    + to run the container (already pulled with a bash cmd): docker run -i -t 0b82600f7a6b /bin/bash
-               + Full command mounting the anaconda .sh installation file as well as the code folder (P.S. copy files 
-               from the mnt/ in Ubuntu/wsl2 to somewhere with no path spaces, they are troublesome, i.e. to media or sth, then mount then from 
-               there to the docker container):
-                    docker run -it \
-		                     --name veetee  \
-                               --mount type=bind,source=/media/votenet_code,target=/home/ \
-                               --mount type=bind,source=/media,target=/mnt/ \
-		                     0b82600f7a6b /bin/bash
-                               
-               + Now we have the targeted cuda toolkit 10.1 in usr/local/, anaconda .sh folder and the main code
-               
+		    curl -s -L https://nvidia.github.io/libnvidia-container/experimental/$distribution/libnvidia-container-experimental.list | sudo tee /etc/apt                    /sources.list.d/libnvidia-container-experimental.list
+
+       + install nvidia toolkit sample: 
+	    sudo apt update && sudo apt install -y nvidia-docker2
+	    sudo usermod -a -G docker $USER
+       + to start docker (no systemd in win, docker will need to be started manually via): sudo service docker start 
+       + ensure docker is runnung: sudo service docker status 
+       + if the upcomming command throws a permission denied run: sudo chmod 666 /var/run/docker.sock, then run it 
+       + docker run --gpus all --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
+       + ---> running this doesn't seem to work: docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
+       + both of the above commands give similar outputs, particularly, GPU info, they start a sample image with gpus enabled which can then be                        containarized
+       + to initialize a container with cuda 10.1 and an ubuntu18.04 container: 
+	    + docker run -it --gpus all nvidia/cuda:10.1-base-ubuntu18.04 nvidia-smi
+	    + to run the container (already pulled with a bash cmd): docker run -i -t 0b82600f7a6b /bin/bash
+       + Full command mounting the anaconda .sh installation file as well as the code folder (P.S. copy files 
+       from the mnt/ in Ubuntu/wsl2 to somewhere with no path spaces, they are troublesome, i.e. to media or sth, then mount then from 
+       there to the docker container):
+	    docker run -it \
+	     	       --name veetee  \
+	     	       --mount type=bind,source=/media/votenet_code,target=/home/ \
+	     	       --mount type=bind,source=/media,target=/mnt/ \
+		       0b82600f7a6b /bin/bash
+
+       + Now we have the targeted cuda toolkit 10.1 in usr/local/, anaconda .sh folder and the main code
+       + ran the .sh file successfully and installed conda, restarted the container via: 
+       		+ start docker normally as aforementioned
+                + docker start <container-name/ID>, then
+                + docker exec -it <container-name/ID> bin/bash
 ### Cloud
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
 * mit Subsampled Punkwolken auf 20,000 Punkte, 180 epochs, Batch Size 8 für epoch 52 sowie epoch 118:
