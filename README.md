@@ -98,11 +98,21 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
                + to initialize a container with cuda 10.1 and an ubuntu18.04 container: 
                     + docker run -it --gpus all nvidia/cuda:10.1-base-ubuntu18.04 nvidia-smi
                     + to run the container (already pulled with a bash cmd): docker run -i -t 0b82600f7a6b /bin/bash
+               + Full command mounting the anaconda .sh installation file as well as the code folder (P.S. copy files 
+               from the mnt/ in Ubuntu/wsl2 to somewhere with no path spaces, they are troublesome, i.e. to media or sth, then mount then from 
+               there to the docker container):
+                    docker run -it \
+		                     --name veetee  \
+                               --mount type=bind,source=/media/votenet_code,target=/home/ \
+                               --mount type=bind,source=/media,target=/mnt/ \
+		                     0b82600f7a6b /bin/bash
+                               
+               + Now we have the targeted cuda toolkit 10.1 in usr/local/, anaconda .sh folder and the main code
                
 ### Cloud
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
 * mit Subsampled Punkwolken auf 20,000 Punkte, 180 epochs, Batch Size 8 für epoch 52 sowie epoch 118:
 * Current learning rate: 0.000001
 Current BN decay momentum: 0.001000
-* 
+* GPU Bnutzerlimits können bis zu 20+ sein
 
