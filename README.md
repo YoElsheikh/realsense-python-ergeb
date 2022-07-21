@@ -122,6 +122,7 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 ### Cloud
+* Insgesamt würden 156 Punktwolken erzeugt und annotiert
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
 * mit Subsampled Punkwolken auf 20,000 Punkte, 180 epochs, Batch Size 8 für epoch 52 sowie epoch 118:
 * learning rate: ist 0.001 am anfang und sinkt allmählich bis 0.000001
