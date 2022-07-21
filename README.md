@@ -119,7 +119,6 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 
-<img src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="600" width="700">
        <div>
 	<figure>
 	  <figcaption>box loss</figcaption>
@@ -134,8 +133,24 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 	  alt="loss.">
 	</figure>
        </div>
+       
+       
+       <div>
+	<figure>
+	  <figcaption>heading class loss</figcaption>
+	  <img
+	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/heading_cls_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+	  alt="loss.">
+	</figure>
+	<figure>
+	  <figcaption>vote loss</figcaption>
+	  <img
+	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/vote_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+	  alt="loss.">
+	</figure>
+       </div>
 
-https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg
+
 
 ### Cloud
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
