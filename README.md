@@ -118,52 +118,52 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 
-
-       <div>
-	<figure>
-	  <figcaption>box loss</figcaption>
-	  <img
-	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
-	  alt="loss.">
-	</figure>
-	<figure>
-	  <figcaption>center loss</figcaption>
-	  <img
-	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
-	  alt="loss.">
-	</figure>
-       </div>
+<div>
+ <figure>
+  <figcaption>box loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+  alt="loss.">
+ </figure>
+ <figure>
+  <figcaption>center loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+  alt="loss.">
+ </figure>
+</div>
        
-       
-       <div>
-	<figure>
-	  <figcaption>heading class loss</figcaption>
-	  <img
-	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/heading_cls_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
-	  alt="loss.">
-	</figure>
-	<figure>
-	  <figcaption>vote loss</figcaption>
-	  <img
-	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/vote_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
-	  alt="loss.">
-	</figure>
-       </div>
 
-    <div>
-	<figure>
-	  <figcaption>obj accuracy</figcaption>
-	  <img
-	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/obj_acc.svg?sanitize=true?sanitize=true" height="300" width="400"
-	  alt="accuracy.">
-	</figure>
-	<figure>
-	  <figcaption>mean loss</figcaption>
-	  <img
-	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/loss.svg?sanitize=true?sanitize=true" height="300" width="400"
-	  alt="loss.">
-	</figure>
-       </div>
+<div>
+ <figure>
+  <figcaption>heading class loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/heading_cls_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+  alt="loss.">
+ </figure>
+ <figure>
+  <figcaption>vote loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/vote_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+  alt="loss.">
+ </figure>
+</div>
+
+
+<div>
+ <figure>
+  <figcaption>obj accuracy</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/obj_acc.svg?sanitize=true?sanitize=true" height="300" width="400"
+  alt="accuracy.">
+ </figure>
+ <figure>
+  <figcaption>mean loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+  alt="loss.">
+ </figure>
+</div>
 
 
 ### Cloud
