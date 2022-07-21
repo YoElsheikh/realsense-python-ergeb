@@ -114,6 +114,29 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
        		+ start docker normally as aforementioned
                 + docker start <container-name/ID>, then
                 + docker exec -it <container-name/ID> bin/bash
+
+
+
+
+
+<img src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="600" width="700">
+       <div>
+	<figure>
+	  <figcaption>box loss</figcaption>
+	  <img
+	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+	  alt="loss.">
+	</figure>
+	<figure>
+	  <figcaption>center loss</figcaption>
+	  <img
+	  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="300" width="400"
+	  alt="loss.">
+	</figure>
+       </div>
+
+https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg
+
 ### Cloud
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
 * mit Subsampled Punkwolken auf 20,000 Punkte, 180 epochs, Batch Size 8 für epoch 52 sowie epoch 118:
