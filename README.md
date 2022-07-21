@@ -124,9 +124,9 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 ### Cloud
 * Training für den Datensatz bis zu 180 epocht war erfolgreich, ohne Errors
 * mit Subsampled Punkwolken auf 20,000 Punkte, 180 epochs, Batch Size 8 für epoch 52 sowie epoch 118:
-* Current learning rate: 0.000001
-Current BN decay momentum: 0.001000
-* GPU Bnutzerlimits können bis zu 20+ sein
+* learning rate: ist 0.001 am anfang und sinkt allmählich bis 0.000001
+* der Netzwerk ist bis zu 1000 epocht traniert, mit einem Batchnummer von 8 
+
 
 
 <div>
@@ -178,6 +178,6 @@ Current BN decay momentum: 0.001000
 
 
 | # Epochs  | subsampled points | batch | accuracy  | box loss | mean loss | vote loss |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 180  | 200000  | 10  | 0.997882  | 0.165145  | 3.764862  | 0.149045  |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |------------- | 
+| 180  | 20000  | 10  | 0.997882  | 0.165145  | 3.764862  | 0.149045  |
 | 1000  | 35000  |  8 | 0.997606  | 0.163451  | 3.843967  | 0.150954  | 
