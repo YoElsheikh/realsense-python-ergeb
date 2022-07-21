@@ -131,18 +131,18 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 <div>
- <figure>
-  <figcaption>box loss</figcaption>
-  <img
-  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
-  alt="loss.">
- </figure>
- <figure>
-  <figcaption>center loss</figcaption>
-  <img
-  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
-  alt="loss.">
- </figure>
+	 <figure>
+		  <figcaption>box loss</figcaption>
+		  <img
+		  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
+		  alt="loss.">
+		 </figure>
+		 <figure>
+		  <figcaption>center loss</figcaption>
+		  <img
+		  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
+		  alt="loss.">
+		 </figure>
 </div>
        
 
