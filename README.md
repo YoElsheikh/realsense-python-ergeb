@@ -182,3 +182,18 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |------------- | 
 | 180  | 20000  | 10  | 0.997882  | 0.165145  | 3.764862  | 0.149045  |
 | 1000  | 35000  |  8 | 0.997606  | 0.163451  | 3.843967  | 0.150954  | 
+
+
+
+
+<div class="container">
+  <div class="sections">
+      <div class="section-text">This is the left section</div>
+     <src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/obj_acc.svg?sanitize=true?sanitize=true" height="250" width="350"" />
+  </div>
+  <div class="sections">
+      <div class="section-text">This is right section</div>
+     <src=""https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/loss.svg?sanitize=true?sanitize=true" height="250" width="350" />
+  </div>
+</div>
+
