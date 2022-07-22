@@ -130,23 +130,23 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 
-<div>
-	 <figure>
-		  <figcaption>box loss</figcaption>
-		  <img
-		  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
-		  alt="loss.">
-		 </figure>
-		 <figure>
-		  <figcaption>center loss</figcaption>
-		  <img
-		  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
-		  alt="loss.">
-		 </figure>
-</div>
+
+<figure>
+  <figcaption>box loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/box_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
+  alt="loss.">
+ </figure>
+ <figure>
+  <figcaption>center loss</figcaption>
+  <img
+  src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/center_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
+  alt="loss.">
+ </figure>
+
        
 
-<div>
+
  <figure>
   <figcaption>heading class loss</figcaption>
   <img
@@ -159,10 +159,10 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
   src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/vote_loss.svg?sanitize=true?sanitize=true" height="250" width="350"
   alt="loss.">
  </figure>
-</div>
 
 
-<div>
+
+
  <figure>
   <figcaption>obj accuracy</figcaption>
   <img
@@ -175,7 +175,7 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
   src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/loss.svg?sanitize=true?sanitize=true" height="250" width="350"
   alt="loss.">
  </figure>
-</div>
+
 
 ### Trainingsrunden Zusammenfassung
 | # Epochs  | subsampled points | batch | accuracy  | box loss | mean loss | vote loss |
@@ -185,15 +185,4 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 
-
-<div class="container">
-  <div class="sections">
-      <div class="section-text">This is the left section</div>
-     <src="https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/obj_acc.svg?sanitize=true?sanitize=true" height="250" width="350"" />
-  </div>
-  <div class="sections">
-      <div class="section-text">This is right section</div>
-     <src=""https://raw.githubusercontent.com/YoElsheikh/realsense_python_ergeb/master/Train_val/loss.svg?sanitize=true?sanitize=true" height="250" width="350" />
-  </div>
-</div>
 
