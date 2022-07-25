@@ -102,12 +102,13 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 	    + to run the container (already pulled with a bash cmd): docker run -i -t 0b82600f7a6b /bin/bash
        + Full command mounting the anaconda .sh installation file as well as the code folder (P.S. copy files 
        from the mnt/ in Ubuntu/wsl2 to somewhere with no path spaces, they are troublesome, i.e. to media or sth, then mount then from 
-       there to the docker container):
+       there to the docker container, also do not forget to expose the driver, i.e. be able to use the nvidia-smi through the flag --gpus all):
 	    docker run -it \
-	     	       --name veetee  \
-	     	       --mount type=bind,source=/media/votenet_code,target=/home/ \
-	     	       --mount type=bind,source=/media,target=/mnt/ \
-		       0b82600f7a6b /bin/bash
+		      --name veeenn  \
+		      --mount type=bind,source=/media/votenet_code,target=/home/ \
+		      --mount type=bind,source=/media,target=/mnt/ \
+		      --gpus all \
+		      0b82600f7a6b /bin/bash
 
        + Now we have the targeted cuda toolkit 10.1 in usr/local/, anaconda .sh folder and the main code
        + ran the .sh file successfully and installed conda, restarted the container via: 
