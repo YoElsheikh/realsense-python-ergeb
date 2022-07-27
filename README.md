@@ -194,3 +194,7 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 		deswegen werden viel Daten benötigt
 		+ aus dem Datensatz heraus erweitern, Augmentation ist schon random.
 		+ Hintergründ enfernen, mit z > thresh
+		
+	+ Removed the background
+	+ found a problem with the data returned by the dataset class, particularly, the centers, votes as well as the pc_obj.ply
+	they seem to be flipped about the top plane (parallel to XY) of the object, highly likely that this is what's been causing the false data the Network has been feeding on 
