@@ -185,5 +185,12 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 | 1000  | 35000  |  8 | 0.997606  | 0.163451  | 3.843967  | 0.150954  | 
 
 
-
-
+### Notizen
+	+ Der Netzwerk hat schlechte Detektion gezeigt, und overfitted Klasse 1, da mehr Labels davon im Vergleich im Datensatz sind.
+	+ Recall ist auch fur alle Klassen nicht besonders gut
+	+ TO DOs
+		+ Mehr daten erzeugen, bzw. die Daten mehr repräsentative sind machen, mind. 500 Punktwoklen insgesamt 
+		+ Wahrscheinlich ein Problem ist, dass die Features zwischen die verschiedene Klassen sehr ähnlich sind
+		deswegen werden viel Daten benötigt
+		+ aus dem Datensatz heraus erweitern, Augmentation ist schon random.
+		+ Hintergründ enfernen, mit z > thresh
