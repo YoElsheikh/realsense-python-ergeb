@@ -186,15 +186,16 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 ### Notizen
-	+ Der Netzwerk hat schlechte Detektion gezeigt, und overfitted Klasse 1, da mehr Labels davon im Vergleich im Datensatz sind.
-	+ Recall ist auch fur alle Klassen nicht besonders gut
-	+ TO DOs
-		+ Mehr daten erzeugen, bzw. die Daten mehr repräsentative sind machen, mind. 500 Punktwoklen insgesamt 
-		+ Wahrscheinlich ein Problem ist, dass die Features zwischen die verschiedene Klassen sehr ähnlich sind
-		deswegen werden viel Daten benötigt
-		+ aus dem Datensatz heraus erweitern, Augmentation ist schon random.
-		+ Hintergründ enfernen, mit z > thresh
-		
-	+ Removed the background
-	+ found a problem with the data returned by the dataset class, particularly, the centers, votes as well as the pc_obj.ply
-	they seem to be flipped about the top plane (parallel to XY) of the object, highly likely that this is what's been causing the false data the Network has been feeding on 
++ Der Netzwerk hat schlechte Detektion gezeigt, und overfitted Klasse 1, da mehr Labels davon im Vergleich im Datensatz sind.
++ Recall ist für alle Klassen auch nicht besonders gut
++ TO DOs:
+	+ Mehr daten erzeugen, bzw. die Daten mehr repräsentative machen, mind. 3500 Punktwoklen insgesamt (im Vergleich Kitti ist ca. 7400+ und SUNrgbd ist 30000+)
+	+ Wahrscheinlich ein Problem ist, dass die Features zwischen die verschiedene Klassen sehr ähnlich sind
+	deswegen werden viel Daten benötigt
+	+ aus dem Datensatz heraus erweitern, Augmentation ist schon random.
+	+ Hintergründ enfernen, mit z > thresh
+
++ Hintergrund wurde entfernt, wichtige Objekte bleiben intakt
++ Wiederevaluierung der von der Datensatzklasse geschmißene PCs und Labels
++ Da die zur Erzeugung Daten größ und damit wird viel Zeit verschwindet (ein PC zu machen + zu labeln braucht ca. 3 Min. im Durchschnitt, insgesamt 175 Stunden, d.h. gegen 25 Tagen mit 7 Stunden / Tag, hängt auch davon ab, wie schnell mit der neuen Daten der Netzwerk sich verbessert), ertmal wird aus dem Datensatz heraus erweitert, sodass die Klassenverteilung is so viel wie möglich fair ist, dann werden mehr PCs gemacht -- ich vermute erstmal mit +200 den Netzwerk testen, danach die Erweiterungsmöglichkeit berücksichtigen.
++ mit boxnet für ungefähr 600 epoch trainieren
