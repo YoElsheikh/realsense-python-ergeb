@@ -197,5 +197,5 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 + Hintergrund wurde entfernt, wichtige Objekte bleiben intakt
 + Wiederevaluierung der von der Datensatzklasse geschmißene PCs und Labels
-+ Da die zur Erzeugung Daten größ und damit wird viel Zeit verschwindet (ein PC zu machen + zu labeln braucht ca. 3 Min. im Durchschnitt, insgesamt 175 Stunden, d.h. gegen 25 Tagen mit 7 Stunden / Tag, hängt auch davon ab, wie schnell mit der neuen Daten der Netzwerk sich verbessert), ertmal wird aus dem Datensatz heraus erweitert, sodass die Klassenverteilung is so viel wie möglich fair ist, dann werden mehr PCs gemacht -- ich vermute erstmal mit +200 den Netzwerk testen, danach die Erweiterungsmöglichkeit berücksichtigen.
++ Da die zur Erzeugung Daten größ sind und damit viel Zeit verschwindet wird (ein PC zu machen + zu labeln braucht ca. 3 Min. im Durchschnitt, insgesamt 175 Stunden, d.h. gegen 25 Tagen mit 7 Stunden / Tag, hängt auch davon ab, wie schnell mit der neuen Daten der Netzwerk sich verbessert), ertmal wird aus dem Datensatz heraus erweitert, sodass die Klassenverteilung is so viel wie möglich fair ist, dann werden mehr PCs gemacht -- ich vermute erstmal mit +200 den Netzwerk testen, danach die Erweiterungsmöglichkeit berücksichtigen.
 + mit boxnet für ungefähr 600 epoch trainieren
