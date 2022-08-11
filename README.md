@@ -9,6 +9,7 @@ showcase updates
 * [Update 02.06.2022](#Update-02.06.2022)
 * [Labeling-Datenaufbereitung](#Labeling-Datenaufbereitung)
 * [Update 19.07.2022](#Update-19.07.2022)
+* [Update Anfang August](#Update-Anfang-August)
 
 
 ## trainierte MobileNetSSD + Realsense D400
@@ -200,5 +201,15 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 + Da die zur Erzeugung Daten größ sind und damit viel Zeit verschwindet wird (ein PC zu machen + zu labeln braucht ca. 3 Min. im Durchschnitt, insgesamt 175 Stunden, d.h. gegen 25 Tagen mit 7 Stunden / Tag, hängt auch davon ab, wie schnell mit der neuen Daten der Netzwerk sich verbessert), ertmal wird aus dem Datensatz heraus erweitert, sodass die Klassenverteilung is so viel wie möglich fair ist, dann werden mehr PCs gemacht -- ich vermute erstmal mit +200 den Netzwerk testen, danach die Erweiterungsmöglichkeit berücksichtigen.
 + mit boxnet für ungefähr 600 epoch trainieren
 
+
+
+
+## Update Anfang August
+
+
 ### notes on votenet and boxnet; 
-+ the catagories that don't perform well are maily discontinous targets and spatially incomplete targets (source: https://blog.csdn.net/weixin_44330777/article/details/121231464 -- bottom of the article). This explains the shorcummings of this method on this particular dataset, a better more dense and complete pointcloud would be a possibility. The quality of the labels should also be improved, specially regarding complete items with dense and continuous points, which the 3D bounding box should engulf
++ the catagories that don't perform well are maily discontinous targets and spatially incomplete targets (source: https://blog.csdn.net/weixin_44330777/article/details/121231464 -- bottom of the article). This explains the shortcommings of this method on this particular dataset, a better more dense and complete pointcloud would be a possibility. The quality of the labels should also be improved, specially regarding complete items with dense and continuous points, which the 3D bounding box should engulf
+
+### MobileNetSSD-V2
++ RealSense Kamera Library/Pipline wurde für mehrere Objekte-Detektion angepasst
++ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz, diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten
