@@ -210,6 +210,18 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 ### notes on votenet and boxnet; 
 + the catagories that don't perform well are maily discontinous targets and spatially incomplete targets (source: https://blog.csdn.net/weixin_44330777/article/details/121231464 -- bottom of the article). This explains the shortcommings of this method on this particular dataset, a better more dense and complete pointcloud would be a possibility. The quality of the labels should also be improved, specially regarding complete items with dense and continuous points, which the 3D bounding box should engulf
 
+#### boxnet Inferenz Beispiel: 
++ BoxNet:
+	![boxnetEx.PNG](boxnetEx.PNG)  
++ Ground Truth:
+	 ![gtbbox.PNG](gtbbox.PNG)
+
+
+### Zusammenfassung (boxnet vs. votenet): 
+
+>Table with metrics goes here<
+
+
 ### MobileNetSSD-V2
 + RealSense Kamera Library/Pipline wurde für mehrere Objekte-Detektion angepasst
 + Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz. Der Netzwerk ist schon zum Teil mit dem  COCO Datensatz trainiert (genereller Datensatz mit), und ein Fine-tunnung wurde durch Tensorflow API durchgeführt (Transfer Learning) diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten und somit die Position von diesen.
