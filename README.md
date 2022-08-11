@@ -212,4 +212,4 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 ### MobileNetSSD-V2
 + RealSense Kamera Library/Pipline wurde für mehrere Objekte-Detektion angepasst
-+ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz, diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten
++ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz, diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten und somit die Position von diesen.
