@@ -212,4 +212,11 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 ### MobileNetSSD-V2
 + RealSense Kamera Library/Pipline wurde für mehrere Objekte-Detektion angepasst
-+ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz, diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten und somit die Position von diesen.
++ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz. Der Netzwerk ist schon zum Teil mit dem  COCO Datensatz trainiert (genereller Datensatz mit), und ein Fine-tunnung wurde durch Tensorflow API durchgeführt (Transfer Learning) diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten und somit die Position von diesen.
++ Das Model evaluiert während der Trainierung, jede 979 Schritte
+
++ bisherge Evaluierung Fortschritt (11.08.2022 15:31): Average Precision: 
+
+	+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.715
+	+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.801
+	+ Loss zwischen 1.4-2.0
