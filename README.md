@@ -212,8 +212,15 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 #### boxnet Inferenz Beispiel: 
 + BoxNet:
+
+
+
 	![boxnetEx.PNG](boxnetEx.PNG)  
+
 + Ground Truth:
+
+
+
 	 ![gtbbox.PNG](gtbbox.PNG)
 
 
