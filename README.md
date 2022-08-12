@@ -230,8 +230,8 @@ die Daten von die eigine PC würden manuell durch Meshlab ausgerichtet um den 3D
 
 
 ### MobileNetSSD-V2
-+ RealSense Kamera Library/Pipline wurde für mehrere Objekte-Detektion angepasst
-+ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz. Der Netzwerk ist schon zum Teil mit dem  COCO Datensatz trainiert (genereller Datensatz mit), und ein Fine-tunnung wurde durch Tensorflow API durchgeführt (Transfer Learning) diese werden nach Erkennung und Bounding Box Generierung genutzt um die das Bounding Box's oberen Vertices (2D) wieder zu erhalten und somit die Position von diesen.
++ RealSense Kamera Pipline Code wurde für mehrere Objekte-Detektion angepasst
++ Gerade läuft die Trainierung von MobileNetSSD-V2 mit Oussama's schon generierte 2D Datensatz. Der Netzwerk ist schon zum Teil mit dem  COCO Datensatz trainiert (genereller Datensatz mit 90+ Klassen), und ein Fine-tunnung wurde durch Tensorflow API durchgeführt (Transfer Learning) diese werden nach Erkennung und Bounding Box Generierung genutzt um die Bounding Box's oberen Vertices (2D) wieder zu erhalten und somit die z Position zu berechnen.
 + Das Model evaluiert während der Trainierung, jede 979 Schritte
 
 + bisherge Evaluierung Fortschritt (11.08.2022 15:31): Average Precision: 
