@@ -1,4 +1,4 @@
-# realsense_python_ergeb
+# realsense-python-results
 showcase updates
 
 ## Inhalt
